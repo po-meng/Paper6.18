@@ -13,36 +13,35 @@ import pandas as pd
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
-from pathlib import Path
+from project_paths import *
 
 
 # =========================================================
-# 1. 基本路径设置
+# 1. 路径设置
 # =========================================================
 
-BASE_DIR = Path(r"D:\tools\za\paper")
-OUT_DIR = BASE_DIR / "Simplified_Multistate_WTG_Model_Result"
-OUT_DIR.mkdir(parents=True, exist_ok=True)
+OUT_DIR = SIMPLIFIED_MULTISTATE_WTG_MODEL_RESULT_DIR
 
-COMMON_RESULT_DIR = BASE_DIR / "Common_Wind_Speed_Model_Result"
-FIG2_SITE_MODELS_PATH = COMMON_RESULT_DIR / "Fig2_combining_wind_speed_models.csv"
-COMMON_MODEL_PATH = COMMON_RESULT_DIR / "CommonWindSpeedModel_100step.csv"
+COMMON_RESULT_DIR = COMMON_WIND_SPEED_MODEL_RESULT_DIR
+FIG2_SITE_MODELS_PATH = COMMON_WIND_MODEL_FIG2
+COMMON_MODEL_PATH = COMMON_WIND_MODEL_100STEP
 
+# 三个地点的自拟合结果文件夹
 SITES = {
     "North Battleford": {
         "site_key": "NorthBattleford",
         "fig2_column": "North Battleford",
-        "result_dir": BASE_DIR / "North Battleford_Refit_ARMA_Result",
+        "result_dir": NORTH_BATTLEFORD_REFIT_ARMA_RESULT_DIR,
     },
-    "Toronto": {
+    "Toronto Island A": {
         "site_key": "TorontoIslandA",
         "fig2_column": "Toronto Island A",
-        "result_dir": BASE_DIR / "Toronto Island A_Refit_ARMA_Result",
+        "result_dir": TORONTO_ISLAND_A_REFIT_ARMA_RESULT_DIR,
     },
     "Swift Current": {
         "site_key": "SwiftCurrent",
         "fig2_column": "Swift Current",
-        "result_dir": BASE_DIR / "SwiftCurrent_Refit_ARMA_Result",
+        "result_dir": SWIFTCURRENT_REFIT_ARMA_RESULT_DIR,
     },
 }
 

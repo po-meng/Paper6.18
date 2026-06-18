@@ -1,31 +1,28 @@
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-from pathlib import Path
+from project_paths import *
 
 
 # =========================================================
 # 1. 路径设置
 # =========================================================
 
-BASE_DIR = Path(r"D:\tools\za\paper")
-
-OUT_DIR = BASE_DIR / "Common_Wind_Speed_Model_Result"
-OUT_DIR.mkdir(parents=True, exist_ok=True)
+OUT_DIR = COMMON_WIND_SPEED_MODEL_RESULT_DIR
 
 # 三个地点的自拟合结果文件夹
 SITES = {
     "North Battleford": {
         "site_key": "NorthBattleford",
-        "result_dir": BASE_DIR / "North Battleford_Refit_ARMA_Result",
+        "result_dir": NORTH_BATTLEFORD_REFIT_ARMA_RESULT_DIR,
     },
     "Swift Current": {
         "site_key": "SwiftCurrent",
-        "result_dir": BASE_DIR / "SwiftCurrent_Refit_ARMA_Result",
+        "result_dir": SWIFTCURRENT_REFIT_ARMA_RESULT_DIR,
     },
     "Toronto Island A": {
         "site_key": "TorontoIslandA",
-        "result_dir": BASE_DIR / "Toronto Island A_Refit_ARMA_Result",
+        "result_dir": TORONTO_ISLAND_A_REFIT_ARMA_RESULT_DIR,
     },
 }
 

@@ -1,32 +1,20 @@
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-from pathlib import Path
+from project_paths import *
 
 
 # =========================================================
 # 1. 基本路径设置
 # =========================================================
 
-BASE_DIR = Path(r"D:\tools\za\paper")
+OUT_DIR = RBTS_TABLEV_FIG6_DIR
 
-OUT_DIR = BASE_DIR / "RBTS_TableV_Fig6_From_Existing_Models"
-OUT_DIR.mkdir(parents=True, exist_ok=True)
+COMMON_RESULT_DIR = COMMON_WIND_SPEED_MODEL_RESULT_DIR
 
-# 你已经建立好的通用风速模型结果文件夹
-COMMON_RESULT_DIR = BASE_DIR / "Common_Wind_Speed_Model_Result"
+FIG2_SITE_MODELS_PATH = COMMON_MODEL_FIG2
 
-# 直接引用你前面生成的 Fig.2 数据
-# 里面包含：
-# z_midpoint,
-# North Battleford,
-# Swift Current,
-# Toronto Island A,
-# Common Wind Speed Model
-FIG2_SITE_MODELS_PATH = COMMON_RESULT_DIR / "Fig2_combining_wind_speed_models.csv"
-
-# 直接引用你前面生成的 Fig.3 通用风速模型
-COMMON_MODEL_PATH = COMMON_RESULT_DIR / "CommonWindSpeedModel_100step.csv"
+COMMON_MODEL_PATH = COMMON_WIND_MODEL_100STEP
 
 
 # =========================================================
@@ -37,17 +25,17 @@ SITES = {
     "North Battleford": {
         "site_key": "NorthBattleford",
         "fig2_column": "North Battleford",
-        "result_dir": BASE_DIR / "North Battleford_Refit_ARMA_Result",
+        "result_dir": NORTH_BATTLEFORD_REFIT_ARMA_RESULT_DIR,
     },
     "Toronto": {
         "site_key": "TorontoIslandA",
         "fig2_column": "Toronto Island A",
-        "result_dir": BASE_DIR / "Toronto Island A_Refit_ARMA_Result",
+        "result_dir": TORONTO_ISLAND_A_REFIT_ARMA_RESULT_DIR,
     },
     "Swift Current": {
         "site_key": "SwiftCurrent",
         "fig2_column": "Swift Current",
-        "result_dir": BASE_DIR / "SwiftCurrent_Refit_ARMA_Result",
+        "result_dir": SWIFTCURRENT_REFIT_ARMA_RESULT_DIR,
     },
 }
 

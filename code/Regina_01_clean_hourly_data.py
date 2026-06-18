@@ -19,16 +19,17 @@ import numpy as np
 import pandas as pd
 
 
+from project_paths import *
+
 # =========================================================
 # 1. 路径设置
 # =========================================================
-BASE_DIR = Path(r"D:\tools\za\paper")
-RAW_DIR = BASE_DIR / "Regina"
-CLEAN_DIR = BASE_DIR / "Regina_cleaned"
-RESULT_DIR = BASE_DIR / "Regina_ARMA_Result"
 
-CLEAN_DIR.mkdir(parents=True, exist_ok=True)
-RESULT_DIR.mkdir(parents=True, exist_ok=True)
+RAW_DIR = REGINA_DIR
+
+CLEAN_DIR = REGINA_CLEANED_DIR
+
+RESULT_DIR = REGINA_ARMA_RESULT_DIR
 
 YEAR_START = 2001
 YEAR_END = 2003

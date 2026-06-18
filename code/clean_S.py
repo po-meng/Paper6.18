@@ -3,19 +3,19 @@ import calendar
 from pathlib import Path
 
 import pandas as pd
+from project_paths import *
 
 
 # =========================================================
 # 1. 基本参数设置
 # =========================================================
 
-# 原始文件夹名称
-# 如果你的代码和 SwiftCurrent 文件夹在同一级目录，保持这样即可
-RAW_DIR = Path("SwiftCurrent")
+# 原始文件夹
+RAW_DIR = SWIFTCURRENT_DIR
 
 # 清洗后的文件夹，不会覆盖原始数据
-CLEAN_DIR = Path("SwiftCurrent_cleaned")
-CLEAN_DIR.mkdir(exist_ok=True)
+CLEAN_DIR = SWIFTCURRENT_CLEANED_DIR
+CLEAN_DIR.mkdir(parents=True, exist_ok=True)
 
 # 年份范围：1989-2003，共15年
 START_YEAR = 1989

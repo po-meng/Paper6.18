@@ -19,19 +19,25 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-
+from project_paths import *
 
 # =========================================================
 # 1. 路径与参数
 # =========================================================
-BASE_DIR = Path(r"D:\tools\za\paper")
-CLEAN_DIR = BASE_DIR / "Regina_cleaned"
-RESULT_DIR = BASE_DIR / "Regina_ARMA_Result"
-RESULT_DIR.mkdir(parents=True, exist_ok=True)
 
-CLEANED_PATH = CLEAN_DIR / "Regina_hourly_cleaned_2001_2003.csv"
-ACTUAL_SUMMARY_PATH = RESULT_DIR / "Regina_actual_mu_sigma_summary.csv"
+CLEAN_DIR = REGINA_CLEANED_DIR
 
+RESULT_DIR = REGINA_ARMA_RESULT_DIR
+
+CLEANED_PATH = (
+    REGINA_CLEANED_DIR /
+    "Regina_hourly_cleaned_2001_2003.csv"
+)
+
+ACTUAL_SUMMARY_PATH = (
+    REGINA_ARMA_RESULT_DIR /
+    "Regina_actual_mu_sigma_summary.csv"
+)
 # Fig.12 原文给 Regina 使用 ARMA(4,3)。
 AR_ORDER = 4
 MA_ORDER = 3

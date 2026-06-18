@@ -14,25 +14,28 @@ Regina_03_Fig12_LOLE_compare.py
 python Regina_03_Fig12_LOLE_compare.py
 """
 
+
 from pathlib import Path
 
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
+from project_paths import *
 
 
 # =========================================================
-# 1. 路径设置
+# 路径
 # =========================================================
-BASE_DIR = Path(r"D:\tools\za\paper")
-COMMON_RESULT_DIR = BASE_DIR / "Common_Wind_Speed_Model_Result"
-REGINA_RESULT_DIR = BASE_DIR / "Regina_ARMA_Result"
-OUT_DIR = BASE_DIR / "Regina_Fig12_LOLE_Result"
-OUT_DIR.mkdir(parents=True, exist_ok=True)
 
-COMMON_MODEL_100STEP_PATH = COMMON_RESULT_DIR / "CommonWindSpeedModel_100step.csv"
-REGINA_ARMA100_PATH = REGINA_RESULT_DIR / "Regina_ARMA100_wind_model.csv"
-REGINA_MU_SIGMA_PATH = REGINA_RESULT_DIR / "Regina_actual_mu_sigma_summary.csv"
+COMMON_MODEL_100STEP_PATH = COMMON_WIND_MODEL_100STEP
+
+REGINA_ARMA100_PATH = REGINA_ARMA100_MODEL_FILE
+
+REGINA_MU_SIGMA_PATH = REGINA_MU_SIGMA_FILE
+
+OUT_DIR = REGINA_FIG12_LOLE_RESULT_DIR
+
+
 
 
 # =========================================================

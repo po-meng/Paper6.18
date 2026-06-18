@@ -1,23 +1,17 @@
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-from pathlib import Path
 
+from project_paths import *
 
 # =========================================================
 # 1. 路径设置
 # =========================================================
 
-BASE_DIR = Path(r"D:\tools\za\paper")
 
-COMMON_MODEL_PATH = (
-    BASE_DIR
-    / "Common_Wind_Speed_Model_Result"
-    / "CommonWindSpeedModel_100step.csv"
-)
+COMMON_MODEL_PATH = COMMON_WIND_MODEL_100STEP
 
-OUT_DIR = BASE_DIR / "Apply_Common_Wind_Speed_Model_Result"
-OUT_DIR.mkdir(parents=True, exist_ok=True)
+OUT_DIR = APPLY_COMMON_WIND_SPEED_MODEL_RESULT_DIR
 
 
 # =========================================================

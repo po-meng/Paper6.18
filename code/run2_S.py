@@ -6,6 +6,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 from statsmodels.tsa.arima.model import ARIMA
+from project_paths import *
 
 
 # =========================================================
@@ -14,10 +15,9 @@ from statsmodels.tsa.arima.model import ARIMA
 
 SITE_NAME = "NorthBattleford"
 
-DATA_DIR = Path(r"D:\tools\za\paper\North Battleford_cleaned")
-OUT_DIR = Path(r"D:\tools\za\paper\North Battleford_Refit_ARMA_Result")
+DATA_DIR = NORTH_BATTLEFORD_CLEANED_DIR
+OUT_DIR = NORTH_BATTLEFORD_REFIT_ARMA_RESULT_DIR
 OUT_DIR.mkdir(parents=True, exist_ok=True)
-
 START_YEAR = 1989
 END_YEAR = 2003
 

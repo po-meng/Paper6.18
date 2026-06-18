@@ -2,15 +2,15 @@ import re
 import calendar
 from pathlib import Path
 
-import pandas as pd
+from project_paths import *
 
 
 # =========================================================
 # 1. 基本路径与参数
 # =========================================================
 
-RAW_DIR = Path(r"D:\tools\za\paper\Toronto Island A")
-CLEAN_DIR = Path(r"D:\tools\za\paper\Toronto Island A_cleaned")
+RAW_DIR = TORONTO_ISLAND_A_DIR
+CLEAN_DIR = TORONTO_ISLAND_A_CLEANED_DIR
 CLEAN_DIR.mkdir(parents=True, exist_ok=True)
 
 START_YEAR = 1989

@@ -5,7 +5,7 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-from statsmodels.tsa.arima.model import ARIMA
+from project_paths import *
 
 
 # =========================================================
@@ -14,8 +14,8 @@ from statsmodels.tsa.arima.model import ARIMA
 
 SITE_NAME = "SwiftCurrent"
 
-DATA_DIR = Path(r"D:\tools\za\paper\SwiftCurrent_cleaned")
-OUT_DIR = Path(r"D:\tools\za\paper\SwiftCurrent_Refit_ARMA_Result")
+DATA_DIR = SWIFTCURRENT_CLEANED_DIR
+OUT_DIR = SWIFTCURRENT_REFIT_ARMA_RESULT_DIR
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 
 START_YEAR = 1989

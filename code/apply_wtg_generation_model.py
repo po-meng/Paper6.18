@@ -1,23 +1,21 @@
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-from pathlib import Path
+from project_paths import *
 
 
 # =========================================================
 # 1. 路径设置
 # =========================================================
 
-BASE_DIR = Path(r"D:\tools\za\paper")
+INPUT_DIR = APPLY_COMMON_WIND_SPEED_MODEL_RESULT_DIR
 
-# 这里读取你刚刚用通用风速模型生成的示例地点风速概率分布
-INPUT_DIR = BASE_DIR / "Apply_Common_Wind_Speed_Model_Result"
+SITE_DISTRIBUTION_PATH = (
+    APPLY_COMMON_WIND_SPEED_MODEL_RESULT_DIR
+    / "example_site_common_model_probability_distribution.csv"
+)
 
-# 如果你的文件名不是 example_site，可以在这里改
-SITE_DISTRIBUTION_PATH = INPUT_DIR / "example_site_common_model_probability_distribution.csv"
-
-OUT_DIR = BASE_DIR / "WTG_Power_Generation_Model_Result"
-OUT_DIR.mkdir(parents=True, exist_ok=True)
+OUT_DIR = WTG_POWER_GENERATION_MODEL_RESULT_DIR
 
 
 # =========================================================
