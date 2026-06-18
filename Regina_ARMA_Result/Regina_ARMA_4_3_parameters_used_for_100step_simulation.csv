@@ -1,0 +1,9 @@
+﻿mode_used_for_simulation,parameter_type,lag,value
+paper_given_Regina_ARMA_4_3,AR_phi,1,0.9336
+paper_given_Regina_ARMA_4_3,AR_phi,2,0.4506
+paper_given_Regina_ARMA_4_3,AR_phi,3,-0.5545
+paper_given_Regina_ARMA_4_3,AR_phi,4,0.111
+paper_given_Regina_ARMA_4_3,MA_additive,1,-0.2033
+paper_given_Regina_ARMA_4_3,MA_additive,2,-0.4684
+paper_given_Regina_ARMA_4_3,MA_additive,3,0.2301
+paper_given_Regina_ARMA_4_3,alpha_std,0,0.409423

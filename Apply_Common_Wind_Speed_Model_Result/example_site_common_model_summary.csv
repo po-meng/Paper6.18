@@ -1,0 +1,8 @@
+﻿item,value
+site_name,example_site
+annual_mu_kmh,19.53
+annual_sigma_kmh,10.06
+set_negative_to_zero,True
+probability_sum,0.999941742770164
+expected_mean_from_distribution,19.609755375799015
+expected_std_from_distribution,9.859422508018316

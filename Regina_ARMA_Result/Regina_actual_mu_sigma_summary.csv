@@ -1,0 +1,2 @@
+﻿data_type,year_start,year_end,hours_total,mean_wind_speed_kmh,std_wind_speed_kmh,min_wind_speed_kmh,max_wind_speed_kmh
+Actual 2001-2003 cleaned,2001,2003,26280,18.52484779299848,10.692245298906599,0.0,82.0

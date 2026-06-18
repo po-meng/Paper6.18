@@ -1,0 +1,4 @@
+﻿year,raw_rows_in_year,completed_rows,missing_wind_before_interpolation,missing_wind_after_interpolation,mean_wind_speed_kmh,std_wind_speed_kmh,min_wind_speed_kmh,max_wind_speed_kmh
+2001,8760,8760,4,0,18.484874429223744,10.442016359803018,0.0,74.0
+2002,8760,8760,4,0,18.347431506849315,10.768473572695603,0.0,76.0
+2003,8760,8760,1,0,18.742237442922374,10.859206342399785,0.0,82.0

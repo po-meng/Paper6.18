@@ -1,0 +1,6 @@
+﻿step_number,state_count,probability_sum,csv_path
+100,100,1.0,D:\tools\za\paper\Simplified_Multistate_WTG_Model_Result\CommonWindSpeedModel_100step.csv
+10,10,1.0,D:\tools\za\paper\Simplified_Multistate_WTG_Model_Result\CommonWindSpeedModel_10step.csv
+6,6,1.0,D:\tools\za\paper\Simplified_Multistate_WTG_Model_Result\CommonWindSpeedModel_6step.csv
+5,5,1.0,D:\tools\za\paper\Simplified_Multistate_WTG_Model_Result\CommonWindSpeedModel_5step.csv
+2,2,1.0,D:\tools\za\paper\Simplified_Multistate_WTG_Model_Result\CommonWindSpeedModel_2step.csv

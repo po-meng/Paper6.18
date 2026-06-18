@@ -1,0 +1,8 @@
+format = txt
+climate_id = 6158665
+Year = 2003
+Month = 12
+Day = 1
+time = LST
+timeframe = 1
+submit = Download Data

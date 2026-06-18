@@ -1,0 +1,10 @@
+﻿item,value
+actual_mean,19.27889627761217
+actual_std,9.648372171469342
+simulated_raw_mean,19.272229188888577
+simulated_raw_std,10.114348859481787
+simulated_negative_set_zero_mean,19.3726903058498
+simulated_negative_set_zero_std,9.878192644260526
+negative_wind_speed_ratio,0.02335650684931507
+simulation_years,1000.0
+simulation_hours,8760000.0

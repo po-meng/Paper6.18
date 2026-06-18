@@ -1,0 +1,4 @@
+﻿data_type,mean_wind_speed_kmh,std_wind_speed_kmh,simulation_years,arma_parameter_mode
+Actual 2001-2003 cleaned,18.52484779299848,10.6922452989066,,actual_data
+ARMA simulated zero-negative all years,18.653325289596765,10.717078929222415,1000.0,paper_given_Regina_ARMA_4_3
+ARMA simulated raw all years,18.507174917709364,11.040949102197475,1000.0,paper_given_Regina_ARMA_4_3

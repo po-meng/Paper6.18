@@ -1,0 +1,15 @@
+﻿item,value
+input_wind_distribution_file,D:\tools\za\paper\Apply_Common_Wind_Speed_Model_Result\example_site_common_model_probability_distribution.csv
+rated_power_Pr_MW,1.5
+cut_in_speed_Vci_kmh,14.4
+rated_speed_Vr_kmh,45.0
+cut_out_speed_Vco_kmh,90.0
+A,0.11765813148788919
+B,-0.021242845059592456
+C,0.0009077876030586525
+wind_state_probability_sum,0.999941742770164
+power_state_probability_sum,0.999941742770164
+number_of_wind_speed_states,71
+number_of_power_output_states,33
+zero_output_probability_P0,0.2931186073059347
+rated_output_probability_Pr_state,0.011069520547944528

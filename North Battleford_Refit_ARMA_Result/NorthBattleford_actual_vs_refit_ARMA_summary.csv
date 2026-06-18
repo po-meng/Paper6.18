@@ -1,0 +1,4 @@
+﻿data_type,mean_wind_speed_kmh,std_wind_speed_kmh,sample_hours
+Actual 1989-2003,13.787938618223954,9.591142802136256,131400
+Refit ARMA simulated raw,13.785504776346217,9.563870917820914,8760000
+Refit ARMA simulated negative set zero,14.062170679247533,9.031839109931038,8760000
